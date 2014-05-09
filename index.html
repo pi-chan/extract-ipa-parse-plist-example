@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content= "initial-scale=1" />
+  <title>一覧を作成する</title>
+  <script type="text/javascript" src="./lib/zip.js"></script>
+  <script type="text/javascript" src="./lib/xoyip-jdataview.js"></script>
+  <script type="text/javascript" src="./lib/xoyip-bplist-parser.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+  <h1>URLスキーム解析</h1>
+  <ul>
+    <li><code>$(HOME)/Music/iTunes/iTunes Media/Mobile Applications</code>を指定する</li>
+    <li>URLスキーム解析を押す</li>
+  </ul>
+
+  <form action="#">
+    <input type="file" id="myFile" webkitdirectory directory />
+    <input type="button" id="fileInfo" value="URLスキーム解析" />
+  </form>
+  <div id="contents"></div>
+  <ul id="file-list"></ul>
+  <script type="text/javascript" src="./main.js"></script>  
+</body>
+</html>
